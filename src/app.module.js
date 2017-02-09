@@ -10,7 +10,8 @@ app.config(['$routeProvider', '$locationProvider', '$mdThemingProvider',
         .primaryPalette('green');
 
     $routeProvider.when('/', {
-      templateUrl: 'src/module/login/login.html'
+      templateUrl: 'src/module/login/login.html',
+      controller: 'loginCtrl'
     });
 
     $locationProvider.html5Mode(true);

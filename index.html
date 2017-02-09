@@ -42,5 +42,20 @@
 
   <!-- App Js -->
   <script src="src/app.module.js" defer></script>
+  <script src="src/module/login/loginCtrl.js" defer></script>
+
+  <script type="text/javascript">
+    var loadGapi = function() {
+      gapi.load('client:auth2', initAuth);
+      function initAuth() {
+        var clientId = '61587585308-ckqisu3i821e4ba59jufnue3qflj8gkl.apps.googleusercontent.com';
+        gapi.auth2.init({
+          client_id: clientId,
+          scope: 'https://www.googleapis.com/auth/plus.login https://www.googleapis.com/auth/userinfo.email'
+        });
+      }
+    };
+  </script>
+  <script src="//apis.google.com/js/api.js?onload=loadGapi" async defer></script>
 </body>
 </html>
