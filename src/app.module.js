@@ -12,7 +12,12 @@ app.config(['$routeProvider', '$locationProvider', '$mdThemingProvider',
     $routeProvider.when('/', {
       templateUrl: 'src/module/login/login.html',
       controller: 'loginCtrl'
-    });
+    }).when('/calendar', {
+      templateUrl: 'src/module/calendar/calendar.html',
+      controller: 'calendarCtrl'
+    }).otherwise({
+      templateUrl: '/app/modules/error/pageNotFound.html'
+    });;
 
     $locationProvider.html5Mode(true);
   }]);
