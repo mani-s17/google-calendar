@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="calendarApp">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+  <base href="/">
+
+  <title>Custom Calendar</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="assets/css/angular-material.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+<body>
+  <div layout="row" layout-margin class="min-height-50px">
+    Logo here
+  </div>
+
+  <div ng-view autoscroll="true"></div>
+
+  <div layout-margin>
+    <div layout="row" layout-align="center center" layout-margin class="min-height-50px md-caption ternary-text-color">
+      <div flex="15">About</div>
+      <div flex="15">Privacy</div>
+      <div flex="70" layout="row" layout-align="end center">&copy; CollegEvents.com</div>
+    </div>
+  </div>
+
+  <script src="assets/js/jquery-1.12.3.min.js"></script>
+  <script src="assets/js/angular.min.js"></script>
+  <script src="assets/js/angular-material.min.js"></script>
+  <script src="assets/js/angular-route.min.js" defer></script>
+  <script src="assets/js/angular-animate.min.js" defer></script>
+  <script src="assets/js/angular-aria.min.js" defer></script>
+  <script src="assets/js/angular-messages.min.js" defer></script>
+
+
+  <!-- App Js -->
+  <script src="src/app.module.js" defer></script>
+</body>
+</html>
